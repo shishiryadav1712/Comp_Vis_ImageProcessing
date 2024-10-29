@@ -1,39 +1,45 @@
 
-# Computer Vision Project 2 - Edge Detection and Shape Recognition
+# Computer Vision Project 1
 
 ## Overview
-This project is implemented in a single Jupyter Notebook file, `Proj2.ipynb`, This project implements key computer vision algorithms, such as edge detection, corner detection, and shape recognition through the Hough transform. It also features interactive boundary tracing and circle detection functionalities.
+This project is implemented in a single Jupyter Notebook file, `Project_1.ipynb`, which explores various aspects of image processing and computer vision techniques, including sampling, filtering, noise handling, and edge detection using Sobel filters.
+
+The project consists of the following problems:
+1. **Problem 1**: Image Sampling (Downsampling and Upsampling).
+2. **Problem 2**: Gaussian Smoothing.
+3. **Problem 3**: Image Filtering (Gaussian and Median Filtering).
+4. **Problem 4**: Noise Handling.
+5. **Problem 5**: Sobel Filters for Edge Detection and Gradient Analysis.
+
+Each problem is explained and solved within the notebook, with corresponding outputs and observations documented for better understanding.
 
 ## Prerequisites
 To run this project, you will need the following:
 
 - **Python 3.x** (Recommended version: 3.6 or above)
 - Required Python libraries:
-- Python 3.8+
-- NumPy
-- OpenCV (cv2)
-- Matplotlib
-- Pillow (PIL)
-- SciPy
-
+  - `numpy`
+  - `matplotlib`
+  - `PIL` (Pillow)
+  - `jupyter`
 
 ### Installing Dependencies
 If you don't have the required libraries installed, you can install them using the following command:
 
 ```bash
-pip install numpy matplotlib pillow opencv-python scipy jupyter
+pip install numpy matplotlib pillow jupyter
 ```
 
 ## How to Run the Project
 1. **Open the Jupyter Notebook**:
-   Navigate to the directory where `Proj2.ipynb` is located and start the Jupyter Notebook server by running:
+   Navigate to the directory where `Project_1.ipynb` is located and start the Jupyter Notebook server by running:
 
    ```bash
    jupyter notebook
    ```
 
-2. **Open `Proj2.ipynb`**:
-   In the Jupyter Notebook interface that opens in your browser, locate and open the `Proj2.ipynb` file.
+2. **Open `Project_1.ipynb`**:
+   In the Jupyter Notebook interface that opens in your browser, locate and open the `Project_1.ipynb` file.
 
 3. **Run Each Cell Sequentially**:
    - The notebook is structured such that each problem is handled in separate cells.
@@ -47,38 +53,29 @@ pip install numpy matplotlib pillow opencv-python scipy jupyter
 The project files are organized as follows:
 
 ```
-
-
-├── README.md            #Readme file
-├── 1.png                # Image for Problem 1
-├── 2-1.jpg              # Image for Problem 2 (Subproblem 1)
-├── 2-2.jpg              # Image for Problem 2 (Subproblem 2)
-├── 3.png                # Image for Problem 3 (Subproblem 1)
-├── train.png            # Training image for Problem 3 (Subproblem 2)
-├── test.png             # Test image for Problem 3 (Subproblem 2)
-├── train.mat            # Data file for Problem 3 (Subproblem 2)
-├── Proj2.ipynb          # Jupyter Notebook for the entire project
-├── Output 1 -1.png      # Output of Problem 1 (Subproblem 1)
-├── Output 1 -2.png      # Output of Problem 1 (Subproblem 2)
-├── output-2.png         # Output for Problem 2
-├── output 3-1.png       # Output for Problem 3 (Subproblem 1)
-├── output 3-2.png       # Output for Problem 3 (Subproblem 2)
-├── Cv_ProjectReport2_Shishir.pdf  # Full project report
+Project_1.ipynb
+lena.png
+Problem1.png
+Problem2.png
+Problem3.png
+Problem4.png
+Problem5.png
+README.md
+Report_Project1_Shishir.pdf
 ```
 
-- The file `Proj2.ipynb` contains the code and solutions for all the problems.
-- There multiple images used in this project , which are used in following way 
-In Problem 1, there is one image, 1.png, which will be used for both Subproblem 1 and Subproblem 2.
-In Problem 2, there are two images, 2-1.jpg and 2-2.jpg, please conduct Corner Point Detection for both.
-In Problem 3, use 3.png for Subproblem 1, and test.png, train.png, and train.mat for Subproblem 2.
-- The comments in projectt structure section describes which image is output of which problem . The output images generated for each problem, stored for reference.
+- The file `Project_1.ipynb` contains the code and solutions for all the problems.
+- The file `lena.png` is the input image used throughout the project.
+- The `Problem1.png`, `Problem2.png`, etc., are the output images generated for each problem, stored for reference.
 - `README.md` provides instructions on running the project.
-- Cv_ProjectReport2_Shishir.pdf provides a detail report about the project 1.
+- Report_Project1_Shishir.pdf provides a detail report about the project 1.
 
 ## Additional Notes
-- Ensure that the all the images provided are in the same directory as the `Proj2.ipynb` file to avoid any issues with loading the image.
+- Ensure that the `lena.png` image is in the same directory as the `Project_1.ipynb` file to avoid any issues with loading the image.
 - The notebook is self-contained, and all outputs will be displayed inline when run in the Jupyter environment.
- # Note 
- To run the problem 1 subproblem 2 , we need to press "q" to complete the selction of points and to get the output for it.
+
+## Troubleshooting
+- If the notebook does not display correctly, ensure that Jupyter is installed correctly and the necessary dependencies (`numpy`, `matplotlib`, `pillow`) are available.
+- If any cell throws an error due to missing files or dependencies, verify that `lena.png` is in the same directory as the notebook and rerun the cell after installing the dependencies using `pip`.
 
 
