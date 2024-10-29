@@ -1,5 +1,3 @@
-# Comp_Vis_ImageProcessing
-
 
 # Computer Vision Project 2 - Edge Detection and Shape Recognition
 
